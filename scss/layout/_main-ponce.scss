@@ -1,0 +1,55 @@
+#ind-back {
+	background-image: url(../assets/img/back.jpg);
+	.gallery {
+		display: grid;
+		grid-template-areas: 
+		"img1 img1 p1" 
+		"img1 img1 img4" 
+		"p2 img2 img2" 
+		"img5 img2 img2" 
+		"img3 img3 p3"
+		"img3 img3 img6";
+		gap: 2px;
+		grid-template-rows: auto auto auto auto auto auto;
+		grid-template-columns: auto auto auto;
+		margin: 3px;
+		align-items: center;
+		margin-top: 0;
+		margin-bottom: 0;
+		
+		p {
+			text-align: center;
+			display: flex;
+		}
+		img{
+			object-fit: cover;
+		}
+	}
+}
+#img1 {
+	grid-area: img1;
+}
+#img2 {
+	grid-area: img2;
+}
+#img3 {
+	grid-area: img3;
+}
+#p1 {
+	grid-area: p1;
+}
+#p2 {
+	grid-area: p2;
+}
+#p3 {
+	grid-area: p3;
+}
+#img4 {
+	grid-area: img4;
+}
+#img5 {
+	grid-area: img5;
+}
+#img6 {
+	grid-area: img6;
+}

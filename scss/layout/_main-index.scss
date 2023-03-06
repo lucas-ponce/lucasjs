@@ -1,0 +1,27 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.destacados {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	.grupo1 {
+		display: flex;
+		gap: 50px;
+		width: 100%;
+		justify-content: center;
+		& :hover {
+			cursor: pointer;
+			color: goldenrod;
+			scale: 1.075;
+		}
+		.data {
+			margin-top: 0px;
+		}
+	}
+}

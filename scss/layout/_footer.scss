@@ -1,0 +1,15 @@
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #897358;
+	margin-top: auto;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	a {
+		color: black;
+		& :hover {
+			scale: 1.35;
+		}
+	}
+}

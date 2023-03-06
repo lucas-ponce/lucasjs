@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Tenor+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+  font-size: 25px;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 50px;
+}
+header div {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+header .navBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 40px;
+  gap: 30px;
+  margin-top: 65px;
+}
+header .navBar li {
+  list-style: none;
+  font-size: 30px;
+}
+header .navBar li a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #897358;
+  margin-top: auto;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+footer a {
+  color: black;
+}
+footer a :hover {
+  scale: 1.35;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.destacados {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.destacados .grupo1 {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+}
+.destacados .grupo1 :hover {
+  cursor: pointer;
+  color: goldenrod;
+  scale: 1.075;
+}
+.destacados .grupo1 .data {
+  margin-top: 0px;
+}
+
+.content-joyas {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.content-joyas .section-joyas {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 45px;
+}
+.content-joyas .section-joyas :hover {
+  cursor: pointer;
+  color: goldenrod;
+  scale: 1.075;
+}
+
+#mujer-perfume #reloj-joyas {
+  margin-top: 60px;
+}
+
+.data p {
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  scale: none;
+}
+
+#ind-back {
+  background-image: url(../assets/img/back.jpg);
+}
+#ind-back .gallery {
+  display: grid;
+  grid-template-areas: "img1 img1 p1" "img1 img1 img4" "p2 img2 img2" "img5 img2 img2" "img3 img3 p3" "img3 img3 img6";
+  gap: 2px;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  margin: 3px;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#ind-back .gallery p {
+  text-align: center;
+  display: flex;
+}
+#ind-back .gallery img {
+  object-fit: cover;
+}
+
+#img1 {
+  grid-area: img1;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
+
+#p1 {
+  grid-area: p1;
+}
+
+#p2 {
+  grid-area: p2;
+}
+
+#p3 {
+  grid-area: p3;
+}
+
+#img4 {
+  grid-area: img4;
+}
+
+#img5 {
+  grid-area: img5;
+}
+
+#img6 {
+  grid-area: img6;
+}
+
+#section-contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+#body-contacto {
+  background-image: url(../assets/img/4865761.jpg);
+}
+
+@media (max-width: 576px) {
+  * {
+    font-size: 15px;
+  }
+  .grupo1 {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  header div {
+    align-self: flex-end;
+    margin-left: 78px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  header nav .navBar {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .grupo1 {
+    display: flex;
+    flex-direction: row;
+  }
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+  * {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

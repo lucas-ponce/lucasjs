@@ -1,0 +1,33 @@
+header {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	margin-bottom: 50px;
+	div {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	nav {
+		display: flex;
+		flex-wrap:wrap ;
+		width: 50%;
+	}
+	.navBar {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		margin: 40px;
+		gap: 30px;
+		margin-top: 65px;
+		li {
+			list-style: none;
+			font-size: 30px;
+			a {
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
+}

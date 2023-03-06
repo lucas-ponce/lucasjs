@@ -1,0 +1,34 @@
+.content-joyas {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	.section-joyas {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 45px;
+		:hover {
+			cursor: pointer;
+			color: goldenrod;
+			scale: 1.075;
+		}
+	}
+}
+
+#mujer-perfume #reloj-joyas{
+    margin-top: 60px;
+}
+
+.data p {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    scale: none;
+}
